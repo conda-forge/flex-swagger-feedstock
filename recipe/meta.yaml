@@ -1,8 +1,8 @@
 {% set name = "flex" %}
-{% set version = "6.12.0" %}
+{% set version = "6.13.0" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "c7713c55efca07aef81c93db639590b5df2c5bf1f2e29c089e57d3137330109e" %}
+{% set hash_value = "faac2127639a044866d28c28f10a6e0f361026c528d34541c805c4d233bde3c4" %}
 
 package:
   name: flex-swagger
