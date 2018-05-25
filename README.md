@@ -15,14 +15,16 @@ Validation tooling for Swagger 2.0 specifications.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/flex-swagger-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/flex-swagger-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/flex-swagger-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/flex-swagger-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/flex-swagger-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/flex-swagger-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/flex-swagger-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/flex-swagger-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/flex-swagger-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/flex-swagger-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/flex-swagger-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/flex-swagger-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/flex-swagger/badges/version.svg)](https://anaconda.org/conda-forge/flex-swagger)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/flex-swagger/badges/downloads.svg)](https://anaconda.org/conda-forge/flex-swagger)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-flex--swagger-green.svg)](https://anaconda.org/conda-forge/flex-swagger) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/flex-swagger.svg)](https://anaconda.org/conda-forge/flex-swagger) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/flex-swagger.svg)](https://anaconda.org/conda-forge/flex-swagger) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/flex-swagger.svg)](https://anaconda.org/conda-forge/flex-swagger) |
 
 Installing flex-swagger
 =======================
