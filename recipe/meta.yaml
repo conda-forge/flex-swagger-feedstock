@@ -5,12 +5,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/f/flex/flex-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/f/flex/flex-{{ version }}.tar.gz
   sha256: 292ed6a37f1ac0a10ad8669f5ceb82e8ba3106c16c54090820927bac8b0b29eb
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - swagger-flex=flex.cli:main
   script: {{ PYTHON }} -m pip install -vv --no-deps --ignore-installed .
@@ -18,11 +18,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - click >=3.3
     - jsonpointer >=1.7
-    - python >=3.6
+    - python >={{ python_min }}
     - pyyaml >=3.11
     - requests >=2.4.3
     - rfc3987 >=1.3.4
@@ -33,6 +33,7 @@ requirements:
 test:
   requires:
     - pip
+    - python {{ python_min }}
   imports:
     - flex
     - flex.compat
