@@ -9,16 +9,18 @@ source:
   sha256: 292ed6a37f1ac0a10ad8669f5ceb82e8ba3106c16c54090820927bac8b0b29eb
 
 build:
-  noarch: python
   number: 1
+  noarch: python
+  script:
+    - {{ PYTHON }} -m pip install .-vv --no-deps --no-build-isolation --disable-pip-version-check
   entry_points:
     - swagger-flex=flex.cli:main
-  script: {{ PYTHON }} -m pip install -vv --no-deps --ignore-installed .
 
 requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - click >=3.3
     - jsonpointer >=1.7
@@ -60,8 +62,8 @@ test:
     - flex.loading.schema.paths.path_item.parameters
     - flex.validation
   commands:
-    - swagger-flex --help
     - pip check
+    - swagger-flex --help
 
 about:
   home: https://github.com/pipermerriam/flex
